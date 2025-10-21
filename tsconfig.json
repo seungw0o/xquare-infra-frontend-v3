@@ -1,0 +1,28 @@
+{
+  "extends": "./tsconfig.base.json",
+  "compileOnSave": false,
+  "files": [],
+  "references": [
+    {
+      "path": "./apps/xquare-user-application"
+    },
+    {
+      "path": "./apps/xquare-admin-application"
+    },
+    {
+      "path": "./libs/xquare-design-system"
+    },
+    {
+      "path": "./libs/xquare-user-interface"
+    },
+    {
+      "path": "./libs/xquare-core"
+    },
+    {
+      "path": "./libs/xquare-utils"
+    },
+    {
+      "path": "./libs/xquare-test"
+    }
+  ]
+}
