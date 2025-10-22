@@ -24,5 +24,31 @@
     {
       "path": "./libs/xquare-test"
     }
-  ]
+  ],
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@xquare/design-system/*": [
+        "libs/xquare-design-system/src/*"
+      ],
+      "@xquare/user-interface/*": [
+        "libs/xquare-user-interface/src/*"
+      ],
+      "@xquare/core/*": [
+        "libs/xquare-core/src/*"
+      ],
+      "@xquare/utils/*": [
+        "libs/xquare-utils/src/*"
+      ],
+      "@xquare/test/*": [
+        "libs/xquare-test/src/*"
+      ],
+      "@xquare/user-application/*": [
+        "apps/xquare-user-application/src/*"
+      ],
+      "@xquare/admin-application/*": [
+        "apps/xquare-admin-application/src/*"
+      ]
+    }
+  }
 }

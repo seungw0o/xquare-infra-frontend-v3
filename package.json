@@ -1,5 +1,5 @@
 {
-  "name": "@react-monorepo/source",
+  "name": "@xquare/source",
   "version": "0.0.0",
   "packageManager": "yarn@1.22.22",
   "license": "MIT",
