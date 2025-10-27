@@ -1,26 +1,26 @@
+import {SidebarFooterProps} from "./sidebar-footer.types";
 import {
     SideBarFooter,
+    SideBarFooterDiv,
     SideBarFooterNameSpan,
     SideBarFooterProjectDiv,
     SideBarFooterProjectDivSpan,
 } from "./sidebar-footer-style";
 
-interface SidebarFooterProps {
-    name: string;
-    project: string;
-}
-
 export function SidebarFooter({name, project}: SidebarFooterProps) {
     return (
         <SideBarFooter>
-            <SideBarFooterNameSpan>
-                {name}
-            </SideBarFooterNameSpan>
-            <SideBarFooterProjectDiv>
-                <SideBarFooterProjectDivSpan>
-                    {project}
-                </SideBarFooterProjectDivSpan>
-            </SideBarFooterProjectDiv>
+            <SideBarFooterDiv>
+                <SideBarFooterNameSpan>
+                    {name}
+                </SideBarFooterNameSpan>
+                <SideBarFooterProjectDiv>
+                    <SideBarFooterProjectDivSpan>
+                        {project}
+                    </SideBarFooterProjectDivSpan>
+                </SideBarFooterProjectDiv>
+
+            </SideBarFooterDiv>
         </SideBarFooter>
     );
 }

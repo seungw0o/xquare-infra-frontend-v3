@@ -1,4 +1,4 @@
-import { black, blue, gray, green, purple, red, white } from '../tokens/color';
+import {black, blue, gray, green, purple, red, white} from '../tokens/color';
 
 export const colorSemantic = {
     xquare: {
@@ -53,7 +53,10 @@ export const colorSemantic = {
                     dark: gray[500],
                     light: gray[400],
                 },
-                purple: purple[500],
+                purple: {
+                    dark: purple[600],
+                    light: purple[500],
+                },
             },
             hover: {
                 white: white[100],
