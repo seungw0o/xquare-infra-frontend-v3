@@ -3,3 +3,11 @@ export interface SidebarItemProps {
     isActive?: boolean;
     onClick?: () => void;
 }
+
+export interface SideBarMenuItemProps {
+    isActive: boolean;
+}
+
+export interface SideBarMenuItemLabelProps {
+    isActive?: boolean;
+}

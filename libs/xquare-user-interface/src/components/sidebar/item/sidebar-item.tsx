@@ -1,7 +1,8 @@
+import {memo} from 'react';
 import {SidebarItemProps} from "./sidebar-item.types";
 import {SideBarMenuItem, SideBarMenuItemLabel,} from "./sidebar-item-style";
 
-export function SidebarItem({label, isActive = false, onClick}: SidebarItemProps) {
+function SidebarItemComponent({label, isActive = false, onClick}: SidebarItemProps) {
     return (
         <SideBarMenuItem isActive={isActive} onClick={onClick}>
             <SideBarMenuItemLabel isActive={isActive}>
@@ -10,3 +11,5 @@ export function SidebarItem({label, isActive = false, onClick}: SidebarItemProps
         </SideBarMenuItem>
     );
 }
+
+export const SidebarItem = memo(SidebarItemComponent);

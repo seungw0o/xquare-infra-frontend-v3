@@ -1,5 +1,14 @@
 import styled from "@emotion/styled";
 
+const FOOTER_PADDING = "20px";
+const NAME_FONT_SIZE = "12px";
+const NAME_FONT_WEIGHT = "600";
+const PROJECT_GAP = "10px";
+const PROJECT_PADDING = "5px 10px";
+const PROJECT_BORDER_RADIUS = "28px";
+const PROJECT_FONT_SIZE = "10px";
+const PROJECT_FONT_WEIGHT = "700";
+
 export const SideBarFooter = styled.footer`
     align-items: center;
     background-color: ${props => props.theme.color.background.purple.dark};
@@ -11,16 +20,16 @@ export const SideBarFooterDiv = styled.div`
     display: flex;
     height: 100%;
     justify-content: space-between;
-    padding: 20px;
+    padding: ${FOOTER_PADDING};
     width: 100%;
 `;
 
 export const SideBarFooterNameSpan = styled.span`
     color: ${props => props.theme.color.text.none.white};
     font-family: ${props => props.theme.typography.fontFamily};
-    font-size: 12px;
+    font-size: ${NAME_FONT_SIZE};
     font-style: normal;
-    font-weight: 600;
+    font-weight: ${NAME_FONT_WEIGHT};
     line-height: normal;
     text-align: center;
 `;
@@ -29,20 +38,20 @@ export const SideBarFooterProjectDiv = styled.div`
     align-items: center;
     background: ${props => props.theme.color.background.purple.light};
     border: 1px solid ${props => props.theme.color.button.select.purple.dark};
-    border-radius: 28px;
+    border-radius: ${PROJECT_BORDER_RADIUS};
     color: ${props => props.theme.color.button.select.purple.dark};
     display: flex;
-    gap: 10px;
+    gap: ${PROJECT_GAP};
     justify-content: center;
-    padding: 5px 10px;
+    padding: ${PROJECT_PADDING};
 `;
 
 export const SideBarFooterProjectDivSpan = styled.span`
     color: ${props => props.theme.color.button.select.purple.dark};
     font-family: ${props => props.theme.typography.fontFamily};
-    font-size: 10px;
+    font-size: ${PROJECT_FONT_SIZE};
     font-style: normal;
-    font-weight: 700;
+    font-weight: ${PROJECT_FONT_WEIGHT};
     line-height: normal;
     text-align: right;
 `;

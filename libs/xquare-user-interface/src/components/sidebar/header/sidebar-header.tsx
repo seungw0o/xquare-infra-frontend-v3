@@ -1,3 +1,5 @@
+import {memo, useMemo} from 'react';
+import {SidebarHeaderProps} from "./sidebar-header.types";
 import {
     SideBarHeader,
     SideBarHeaderDescriptionDiv,
@@ -6,19 +8,30 @@ import {
     SideBarHeaderNameSpan,
 } from "./sidebar-header-style";
 
-export function SidebarHeader() {
+const HEADER_TITLE = 'XQUARE';
+const EXPANDED_TEXT = '대덕소프트웨어마이스터고등학교 배포 플랫폼';
+const COLLAPSED_TEXT = 'DSM 배포 플랫폼';
+
+function SidebarHeaderComponent({isExpanded = false}: SidebarHeaderProps) {
+    const descriptionText = useMemo(
+        () => (isExpanded ? EXPANDED_TEXT : COLLAPSED_TEXT),
+        [isExpanded]
+    );
+
     return (
         <SideBarHeader>
             <SideBarHeaderDiv>
                 <SideBarHeaderNameSpan>
-                    XQUARE
+                    {HEADER_TITLE}
                 </SideBarHeaderNameSpan>
-                <SideBarHeaderDescriptionDiv>
+                <SideBarHeaderDescriptionDiv isExpanded={isExpanded}>
                     <SideBarHeaderDescriptionDivSpan>
-                        DSM 배포 플랫폼
+                        {descriptionText}
                     </SideBarHeaderDescriptionDivSpan>
                 </SideBarHeaderDescriptionDiv>
             </SideBarHeaderDiv>
         </SideBarHeader>
     );
 }
+
+export const SidebarHeader = memo(SidebarHeaderComponent);

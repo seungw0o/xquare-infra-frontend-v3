@@ -1,7 +1,16 @@
+import {memo, useCallback} from 'react';
 import {SidebarSearchProps} from "./sidebar-search.types";
 import {SideBarDiv, SideBarSearch, SideBarSearchInput,} from "./sidebar-search-style";
 
-export function SidebarSearch({placeholder = "검색어를 입력해주세요.", onSearch}: SidebarSearchProps) {
+const DEFAULT_PLACEHOLDER = "검색어를 입력해주세요.";
+
+function SidebarSearchComponent({placeholder = DEFAULT_PLACEHOLDER, onSearch}: SidebarSearchProps) {
+    const handleChange = useCallback(
+        (e: React.ChangeEvent<HTMLInputElement>) => {
+            onSearch?.(e.target.value);
+        },
+        [onSearch]
+    );
 
     return (
         <SideBarDiv>
@@ -9,8 +18,11 @@ export function SidebarSearch({placeholder = "검색어를 입력해주세요.",
                 <SideBarSearchInput
                     type="text"
                     placeholder={placeholder}
+                    onChange={handleChange}
                 />
             </SideBarSearch>
         </SideBarDiv>
     );
 }
+
+export const SidebarSearch = memo(SidebarSearchComponent);

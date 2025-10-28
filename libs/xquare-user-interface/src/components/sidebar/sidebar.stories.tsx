@@ -63,11 +63,45 @@ export default meta;
 export const Default: Story = {
     args: {
         navItems: [
-            {id: 'home', label: 'HOME'},
-            {id: 'notification', label: 'NOTIFICATION'},
-            {id: 'deployment', label: 'DEPLOYMENT'},
-            {id: 'network', label: 'NETWORK'},
-            {id: 'monitor', label: 'MONITOR'},
+            {
+                id: 'home',
+                label: 'HOME',
+                subItems: [
+                    {id: 'xquare-quickstart', label: 'Quick Start'},
+                    {id: 'xquare-landing', label: 'Landing'},
+                ],
+            },
+            {
+                id: 'notification',
+                label: 'NOTIFICATION',
+                subItems: [
+                    {id: 'xquare-notification', label: 'XQUARE’s notification'},
+                    {id: 'xquare-feed', label: 'XQUARE’s feed'},
+                    {id: 'xquare-status', label: 'XQUARE’s status'},
+                ],
+            },
+            {
+                id: 'deployment',
+                label: 'DEPLOYMENT',
+                subItems: [
+                    {id: 'xquare-deployments', label: 'Deployments'},
+                    {id: 'xquare-addons', label: 'Addons'},
+                ],
+            },
+            {
+                id: 'network',
+                label: 'NETWORK',
+                subItems: [
+                    {id: 'detected', label: '지원되지 않는 기능'},
+                ],
+            },
+            {
+                id: 'monitor',
+                label: 'MONITOR',
+                subItems: [
+                    {id: 'detected', label: '지원되지 않는 기능'},
+                ],
+            },
         ],
         // eslint-disable-next-line @typescript-eslint/no-empty-function
         onNavItemClick: () => {

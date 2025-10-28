@@ -1,3 +1,4 @@
+import {memo} from 'react';
 import {SidebarFooterProps} from "./sidebar-footer.types";
 import {
     SideBarFooter,
@@ -7,7 +8,7 @@ import {
     SideBarFooterProjectDivSpan,
 } from "./sidebar-footer-style";
 
-export function SidebarFooter({name, project}: SidebarFooterProps) {
+function SidebarFooterComponent({name, project}: SidebarFooterProps) {
     return (
         <SideBarFooter>
             <SideBarFooterDiv>
@@ -19,8 +20,9 @@ export function SidebarFooter({name, project}: SidebarFooterProps) {
                         {project}
                     </SideBarFooterProjectDivSpan>
                 </SideBarFooterProjectDiv>
-
             </SideBarFooterDiv>
         </SideBarFooter>
     );
 }
+
+export const SidebarFooter = memo(SidebarFooterComponent);

@@ -16,9 +16,9 @@ const meta: Meta<typeof SidebarHeader> = {
         },
     },
     argTypes: {
-        isOpen: {
+        isExpanded: {
             control: 'boolean',
-            description: '사이드바 열림 상태',
+            description: '사이드바 확장 상태',
             table: {
                 type: {summary: 'boolean'},
                 defaultValue: {summary: 'false'},
@@ -28,31 +28,28 @@ const meta: Meta<typeof SidebarHeader> = {
 };
 
 export default meta;
-export const Open: Story = {
+
+export const Collapsed: Story = {
     args: {
-        isOpen: true,
+        isExpanded: false,
     },
     parameters: {
         docs: {
             description: {
-                story: '사이드바가 열려있을 때의 헤더 상태를 보여줍니다.',
+                story: '사이드바가 축소된 상태의 헤더입니다. "DSM 배포 플랫폼" 텍스트가 표시됩니다.',
             },
         },
     },
 };
 
-/**
- * 사이드바가 닫힌 상태의 헤더 컴포넌트입니다.
- * 제한된 공간에 콘텐츠가 표시됩니다.
- */
-export const Closed: Story = {
+export const Expanded: Story = {
     args: {
-        isOpen: false,
+        isExpanded: true,
     },
     parameters: {
         docs: {
             description: {
-                story: '사이드바가 닫혀있을 때의 헤더 상태를 보여줍니다.',
+                story: '사이드바가 확장된 상태의 헤더입니다. "대덕소프트웨어마이스터고등학교 배포 플랫폼" 텍스트가 표시됩니다.',
             },
         },
     },
