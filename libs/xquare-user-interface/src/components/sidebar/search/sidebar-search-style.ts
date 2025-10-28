@@ -32,7 +32,7 @@ export const SideBarSearchInput = styled.input`
     border: none;
     border-bottom: 1px solid ${props => props.theme.color.text.none.purple.dark};
     color: ${props => props.theme.color.text.none.white};
-    font-family: ${props => props.theme.typography.fontFamily};
+    font-family: ${props => props.theme.fontFamily};
     font-size: ${INPUT_FONT_SIZE};
     font-style: normal;
     font-weight: ${INPUT_FONT_WEIGHT};

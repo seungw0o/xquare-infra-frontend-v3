@@ -1,1 +1,1 @@
-export * as xquareColor from './color';
+export * from "./color/color";

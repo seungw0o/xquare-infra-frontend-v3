@@ -11,7 +11,7 @@ export const SideBarMenuItem = styled.div<SideBarMenuItemProps>`
     align-items: center;
     background-color: ${props => props.theme.color.background.purple.dark};
     display: flex;
-    font-family: ${props => props.theme.typography.fontFamily};
+    font-family: ${props => props.theme.fontFamily};
     padding: ${ITEM_PADDING};
     width: 100%;
 `;

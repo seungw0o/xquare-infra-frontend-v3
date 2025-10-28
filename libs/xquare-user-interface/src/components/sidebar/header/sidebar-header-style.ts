@@ -28,7 +28,7 @@ export const SideBarHeaderDiv = styled.div`
 
 export const SideBarHeaderNameSpan = styled.span`
     color: ${props => props.theme.color.text.none.white};
-    font-family: ${props => props.theme.typography.fontFamily};
+    font-family: ${props => props.theme.fontFamily};
     font-size: ${TEXT_FONT_SIZE};
     font-style: normal;
     font-weight: ${TEXT_FONT_WEIGHT};
@@ -46,7 +46,7 @@ export const SideBarHeaderDescriptionDiv = styled.div<SideBarHeaderDescriptionDi
 
 export const SideBarHeaderDescriptionDivSpan = styled.span`
     color: ${props => props.theme.color.text.none.white};
-    font-family: ${props => props.theme.typography.fontFamily};
+    font-family: ${props => props.theme.fontFamily};
     font-size: ${TEXT_FONT_SIZE};
     font-style: normal;
     font-weight: ${TEXT_FONT_WEIGHT};

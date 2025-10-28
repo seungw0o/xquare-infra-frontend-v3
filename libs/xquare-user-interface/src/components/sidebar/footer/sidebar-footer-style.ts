@@ -26,7 +26,7 @@ export const SideBarFooterDiv = styled.div`
 
 export const SideBarFooterNameSpan = styled.span`
     color: ${props => props.theme.color.text.none.white};
-    font-family: ${props => props.theme.typography.fontFamily};
+    font-family: ${props => props.theme.fontFamily};
     font-size: ${NAME_FONT_SIZE};
     font-style: normal;
     font-weight: ${NAME_FONT_WEIGHT};
@@ -48,7 +48,7 @@ export const SideBarFooterProjectDiv = styled.div`
 
 export const SideBarFooterProjectDivSpan = styled.span`
     color: ${props => props.theme.color.button.select.purple.dark};
-    font-family: ${props => props.theme.typography.fontFamily};
+    font-family: ${props => props.theme.fontFamily};
     font-size: ${PROJECT_FONT_SIZE};
     font-style: normal;
     font-weight: ${PROJECT_FONT_WEIGHT};
