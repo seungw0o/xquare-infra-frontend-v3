@@ -1,5 +1,12 @@
 {
   "name": "@xquare/xquare-user-application",
   "version": "0.0.1",
-  "private": true
+  "private": true,
+  "scripts": {
+    "build": "nx build xquare-user-application",
+    "lint": "nx lint xquare-user-application",
+    "serve": "nx serve xquare-user-application",
+    "test": "nx test xquare-user-application",
+    "typecheck": "nx typecheck xquare-user-application"
+  }
 }

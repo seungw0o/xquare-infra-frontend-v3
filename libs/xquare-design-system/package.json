@@ -13,5 +13,11 @@
       "import": "./dist/index.js",
       "default": "./dist/index.js"
     }
+  },
+  "scripts": {
+    "build": "nx build xquare-design-system",
+    "lint": "nx lint xquare-design-system",
+    "test": "nx test xquare-design-system",
+    "typecheck": "nx typecheck xquare-design-system"
   }
 }

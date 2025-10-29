@@ -13,5 +13,12 @@
       "import": "./dist/index.js",
       "default": "./dist/index.js"
     }
+  },
+  "scripts": {
+    "build": "nx build xquare-user-interface",
+    "lint": "nx lint xquare-user-interface",
+    "storybook": "nx storybook xquare-user-interface",
+    "test": "nx test xquare-user-interface",
+    "typecheck": "nx typecheck xquare-user-interface"
   }
 }

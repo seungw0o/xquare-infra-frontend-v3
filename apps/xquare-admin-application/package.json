@@ -1,5 +1,12 @@
 {
   "name": "@xquare/xquare-admin-application",
   "version": "0.0.1",
-  "private": true
+  "private": true,
+  "scripts": {
+    "build": "nx build xquare-admin-application",
+    "lint": "nx lint xquare-admin-application",
+    "serve": "nx serve xquare-admin-application",
+    "test": "nx test xquare-admin-application",
+    "typecheck": "nx typecheck xquare-admin-application"
+  }
 }
