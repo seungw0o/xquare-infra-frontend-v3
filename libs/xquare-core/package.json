@@ -15,12 +15,6 @@
       "default": "./dist/index.js"
     }
   },
-  "scripts": {
-    "build": "nx build xquare-core",
-    "lint": "nx lint xquare-core",
-    "test": "nx test xquare-core",
-    "typecheck": "nx typecheck xquare-core"
-  },
   "dependencies": {
     "tslib": "^2.3.0"
   }
