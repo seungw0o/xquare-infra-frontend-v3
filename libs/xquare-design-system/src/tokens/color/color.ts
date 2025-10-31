@@ -45,30 +45,30 @@ export interface ThemeColor {
 }
 
 const colorToken = {
-    blue: { 500: "#5050FF" },
-    gray: { 200: "#EAEAEA", 400: "#BEBEBE", 500: "#EAEAEA" },
-    green: {
-      400: "#A0FFA8",
-      500: "#5CE768",
-    },
-    pink: { 500: "#FF68D7" },
-    purple: {
-      100: "#B982FF",
-      200: "#9650FA",
-      300: "#9650FA",
-      400: "#9650FA",
-      500: "#8A38F5",
-      600: "#433459",
-      800: "#0B001A",
-    },
-    red: {
-      400: "#FF9090",
-      500: "#FF5353",
-      600: "#FF0000",
-    },
-    white: "#FFFFFF",
-    black: "#000000",
-}
+  blue: { 500: "#5050FF" },
+  gray: { 200: "#EAEAEA", 400: "#EAEAEA", 500: "#BEBEBE" },
+  green: {
+    400: "#A0FFA8",
+    500: "#5CE768",
+  },
+  pink: { 500: "#FF68D7" },
+  purple: {
+    100: "#B982FF",
+    200: "#9650FA",
+    300: "#9650FA",
+    400: "#9650FA",
+    500: "#8A38F5",
+    600: "#433459",
+    800: "#0B001A",
+  },
+  red: {
+    400: "#FF9090",
+    500: "#FF5353",
+    600: "#FF0000",
+  },
+  white: "#FFFFFF",
+  black: "#000000",
+};
 
 const colorSemantic = {
   xquare: {
@@ -185,5 +185,6 @@ export const lightTheme: XquareTheme = {
   color: colorSemantic.xquare,
   font: textStyles,
   fontWeight: fontWeight,
-  fontFamily: '"Pretendard Variable", "Pretendard", -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", sans-serif',
+  fontFamily:
+    '"Pretendard Variable", "Pretendard", -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", sans-serif',
 };
