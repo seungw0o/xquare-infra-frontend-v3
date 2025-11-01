@@ -46,14 +46,14 @@ export interface ThemeColor {
 
 const colorToken = {
   blue: { 500: "#5050FF" },
-  gray: { 200: "#EAEAEA", 400: "#EAEAEA", 500: "#BEBEBE" },
+  gray: { 200: "#EAEAEA", 400: "#EAEAEA", 500: "#ABABAB" },
   green: {
     400: "#A0FFA8",
     500: "#5CE768",
   },
   pink: { 500: "#FF68D7" },
   purple: {
-    100: "#B982FF",
+    100: "#EDE0FF",
     200: "#9650FA",
     300: "#9650FA",
     400: "#9650FA",
