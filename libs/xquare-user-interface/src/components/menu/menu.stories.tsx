@@ -1,6 +1,5 @@
 import type { Meta, StoryObj } from "@storybook/react-vite";
 import { Menu } from "./menu";
-import { Props } from "./menu.types";
 
 const meta: Meta<typeof Menu> = {
   title: "components/Menu",

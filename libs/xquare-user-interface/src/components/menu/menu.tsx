@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import styled from "@emotion/styled";
 import { Props } from "./menu.types";
 import { theme } from "@xquare/design-system";
