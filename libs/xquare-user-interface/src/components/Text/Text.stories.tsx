@@ -1,13 +1,13 @@
 import type { Meta, StoryObj } from "@storybook/react-vite";
-import { Text } from "./Text";
-import { Props } from "./Text.types";
+import { Text } from "./text";
+import { Props } from "./text.types";
 
 const meta: Meta<typeof Text> = {
   title: "components/Text",
   component: Text,
   tags: ["autodocs"],
   parameters: {
-    layout: "centered"
+    layout: "centered",
   },
   argTypes: {
     $size: {
@@ -21,29 +21,29 @@ const meta: Meta<typeof Text> = {
         "h6",
         "body1",
         "body2",
-        "caption"
+        "caption",
       ],
-      description: "텍스트 크기 및 HTML 태그"
+      description: "텍스트 크기 및 HTML 태그",
     },
     $weight: {
       control: "select",
       options: ["regular", "medium", "bold"],
-      description: "폰트 굵기"
+      description: "폰트 굵기",
     },
     $color: {
       control: "color",
-      description: "텍스트 색상"
+      description: "텍스트 색상",
     },
     $align: {
       control: "select",
       options: ["left", "center", "right"],
-      description: "텍스트 정렬"
+      description: "텍스트 정렬",
     },
     $span: {
       control: "boolean",
-      description: "span 태그로 렌더링"
-    }
-  }
+      description: "span 태그로 렌더링",
+    },
+  },
 };
 
 export default meta;
@@ -53,13 +53,13 @@ type Story = StoryObj<typeof Text>;
 export const Default: Story = {
   args: {
     $size: "body1",
-    children: "기본 텍스트"
-  }
+    children: "기본 텍스트",
+  },
 };
 
 export const Headings: Story = {
   args: {
-    children: "제목 텍스트"
+    children: "제목 텍스트",
   },
   render: (args: Props) => (
     <>
@@ -82,12 +82,12 @@ export const Headings: Story = {
         Heading 6
       </Text>
     </>
-  )
+  ),
 };
 
 export const BodyTexts: Story = {
   args: {
-    children: "본문 텍스트"
+    children: "본문 텍스트",
   },
   render: (args: Props) => (
     <>
@@ -101,20 +101,20 @@ export const BodyTexts: Story = {
         Caption - 작은 설명 텍스트
       </Text>
     </>
-  )
+  ),
 };
 
 export const WithCustomColor: Story = {
   args: {
     $size: "body1",
     $color: "#ff0000",
-    children: "빨간색 텍스트"
-  }
+    children: "빨간색 텍스트",
+  },
 };
 
 export const FontWeight: Story = {
   args: {
-    children: "폰트 굵기별 텍스트"
+    children: "폰트 굵기별 텍스트",
   },
   render: (args: Props) => (
     <>
@@ -128,13 +128,13 @@ export const FontWeight: Story = {
         Bold Weight Text
       </Text>
     </>
-  )
+  ),
 };
 
 export const SpanElement: Story = {
   args: {
     $size: "h4",
     $span: true,
-    children: "Span으로 렌더링된 텍스트"
-  }
+    children: "Span으로 렌더링된 텍스트",
+  },
 };

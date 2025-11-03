@@ -1,5 +1,5 @@
 import styled from "@emotion/styled";
-import type { Props } from "./Text.types";
+import type { Props } from "./text.types";
 import type { TextProps } from "../../utils";
 import type { ComponentType } from "react";
 
