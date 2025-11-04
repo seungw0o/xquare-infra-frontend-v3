@@ -2,7 +2,7 @@ import type { Props } from "./input.type";
 import styled from "@emotion/styled";
 import { parseValue } from "../../utils";
 import { type ChangeEvent, useId } from "react";
-import { Text } from "../Text";
+import { Text } from "../text";
 
 const Wrapper = styled.div`
   display: inline-flex;
